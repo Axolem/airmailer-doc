@@ -21,8 +21,7 @@ export default {
     ],
     socialLinks: [
       { icon: "youtube", link: "" },
-      { icon: "twitter", link: "" },
-      { icon: "discord", link: "" },
+      { icon: "discord", link: "https://discord.gg/FYCFCT6Y" },
     ],
 
     sidebar: {
