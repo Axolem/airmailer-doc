@@ -1,1 +1,7 @@
-# Get Started Page
+# How does Airmailer work
+
+
+## Features
+-Templates
+
+## Pricing
