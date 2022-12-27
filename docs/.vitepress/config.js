@@ -3,21 +3,64 @@ export default {
   description: "An awesome docs template built by me",
   lang: "en-UK",
   lastUpdated: true,
+  cleanUrls: "without-subfolders",
+  editLink: {
+    pattern: "https://github.com/Axolem/airmailer-doc/edit/main/docs/:path",
+    text: "Edit this page on GitHub",
+  },
   head: [
     [
       "link",
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }
+    ],
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "https://cdn-newg.sirv.com/airmailer/dash/vite.svg",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "robots",
+        content: "noindex, nofollow",
+      }
+    ],
+    [
+      "meta",
+      { name: "theme-color", content: "#3c8772" },
+    ],
+    [
+      "script",
+      {
+        async: "async",
+        src: "/scripts/faq.js",
+        type: "application/javascript"
+      }
+    ],
+    [
+      "script",
+      {
+        async: "async",
+        src: "/scripts/feedback.js",
+        type: "application/javascript"
+      },
     ],
   ],
+  markdown: {
+    headers: {
+      level: [0, 0],
+    },
+  },
   themeConfig: {
     //logo: "/logo.svg",
-    //siteTitle: "Adocs",
+    siteTitle: "Airmailer",
     nav: [
       { text: "Docs", link: "/pages/docs/" },
       { text: "Usage Examples", link: "/pages/examples/" },
       { text: "Github", link: "https://github.com/" },
-      { text: "Home", link: "" },
-      { text: "Login", link: "" },
+      { text: "Login", link: "https://airmailer.vercel.app/" },
     ],
     socialLinks: [
       { icon: "youtube", link: "" },

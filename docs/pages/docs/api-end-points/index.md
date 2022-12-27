@@ -46,6 +46,8 @@ async ()=>{
 
 ## Sending a custom email
 
+Coming soon...
+
 ## Responses
 Example of responses you may expect. (Not limited to these only check all responses <a href="/pages/docs/user-guides/#responses">here</a>.)
 
