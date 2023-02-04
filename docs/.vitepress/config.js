@@ -58,7 +58,6 @@ export default {
     siteTitle: "Airmailer",
     nav: [
       { text: "Docs", link: "/pages/docs/" },
-      { text: "Usage Examples", link: "/pages/examples/" },
       { text: "Github", link: "https://github.com/" },
       { text: "Login", link: "https://airmailer.vercel.app/" },
     ],
