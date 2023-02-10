@@ -10,14 +10,16 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT ",
   "dependencies": {
     "npm": "^9.4.2",
     "vitepress": "^1.0.0-alpha.45",
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "sass": "^1.57.1"
-  },
-  "license":"MIT "
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
+    "sass": "^1.57.1",
+    "vitepress-plugin-search": "^1.0.4-alpha.19"
+  }
 }
