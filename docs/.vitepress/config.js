@@ -11,7 +11,7 @@ export default {
   head: [
     [
       "link",
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
     ],
     [
       "link",
@@ -25,26 +25,23 @@ export default {
       {
         name: "robots",
         content: "noindex, nofollow",
-      }
+      },
     ],
-    [
-      "meta",
-      { name: "theme-color", content: "#3c8772" },
-    ],
+    ["meta", { name: "theme-color", content: "#3c8772" }],
     [
       "script",
       {
         async: "async",
         src: "/scripts/faq.js",
-        type: "application/javascript"
-      }
+        type: "application/javascript",
+      },
     ],
     [
       "script",
       {
         async: "async",
         src: "/scripts/feedback.js",
-        type: "application/javascript"
+        type: "application/javascript",
       },
     ],
   ],
@@ -59,86 +56,76 @@ export default {
     nav: [
       { text: "Docs", link: "/pages/docs/" },
       { text: "Github", link: "https://github.com/" },
-      { text: "Login", link: "https://airmailer.vercel.app/" },
+      { text: "Login", link: "https://app.airmailer.co.za" },
     ],
     socialLinks: [
       { icon: "youtube", link: "" },
       { icon: "discord", link: "https://discord.gg/FYCFCT6Y" },
     ],
+    editLink: {
+      pattern: 'https://github.com/Axolem/airmailer-doc/edit/main/docs/:path', //https://github.com/Axolem/airmailer-doc/tree/master/docs
+      text: 'Edit this page on GitHub'
+    },
 
     sidebar: {
       "/pages/": [
         {
+          text: "Getting Started",
+          collapsible: true,
           items: [
             {
-              text: "Getting Started",
-              collapsible: true,
-              items: [
-                {
-                  text: "Introduction",
-                  items: [
-                    { text: "#features", link: "/pages/docs/#features" },
-                    { text: "#pricing", link: "/pages/docs/#pricing" },
-                  ],
-                },
-                { text: "Creating an app", link: "/pages/docs/create-app.md" },
-                {
-                  text: "Creating a template",
-                  link: "/pages/docs/create-template.md",
-                },
-              ],
+              text: "Introduction",
+              link: "/pages/docs/#how-does-airmailer-work",
+            },
+            { text: "Creating an app", link: "/pages/docs/create-app.md" },
+            {
+              text: "Creating a template",
+              link: "/pages/docs/create-template.md",
+            },
+          ],
+        },
+        {
+          text: "SDK",
+          collapsible: false,
+          items: [
+            { text: "Installation", link: "/pages/docs/sdk/#installation" },
+            {
+              text: "Usage Example",
+              link: "/pages/docs/sdk/usage/",
+            },
+            
+          ],
+        },
+        {
+          text: "API End-points",
+          collapsible: true,
+          items: [
+            {
+              text: "Send Email",
+              link: "/pages/docs/api-end-points/#end-points",
             },
             {
-              text: "SDK",
-              collapsible: false,
-              items: [
-                { text: "Installation", link: "/pages/docs/sdk/#installation" },
-                {
-                  text: "Sending a simple email",
-                  link: "/pages/docs/sdk/#sending-a-simple-email",
-                },
-                {
-                  text: "Sending a custom email",
-                  link: "/pages/docs/sdk/#sending-a-custom-email",
-                },
-              ],
+              text: "Get last email",
+              link: "/pages/docs/api-end-points/last-email/",
             },
             {
-              text: "API End-points",
-              collapsible: true,
-              items: [
-                {
-                  text: "End-points",
-                  link: "/pages/docs/api-end-points/#end-points",
-                },
-                {
-                  text: "Sending a simple email",
-                  link: "/pages/docs/api-end-points/#sending-a-simple-email",
-                },
-                {
-                  text: "Sending a custom email",
-                  link: "/pages/docs/api-end-points/#sending-a-custom-email",
-                },
-              ],
+              text: "Verify Email",
+              link: "/pages/docs/api-end-points/verify/",
+            },
+          ],
+        },
+        {
+          text: "User Guides",
+          collapsible: true,
+          items: [
+            {
+              text: "Send Email",
+              link: "/pages/docs/user-guides/send/",
             },
             {
-              text: "User Guides",
-              collapsible: true,
-              items: [
-                {
-                  text: "Email Header",
-                  link: "/pages/docs/user-guides/#email-header",
-                },
-                {
-                  text: "Email body",
-                  link: "/pages/docs/user-guides/#email-body",
-                },
-                {
-                  text: "Responses",
-                  link: "/pages/docs/user-guides/#responses",
-                },
-              ],
-            },
+              text: "Verify Email",
+              link: "/pages/docs/user-guides/verify/",
+            }
           ],
         },
       ],

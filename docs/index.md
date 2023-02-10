@@ -265,18 +265,15 @@ features:
  
  
  <form class="form">
-  <p type="Name:"><input type="text" autoComplete="given-name"  placeholder="Write your name here.."/></p>
-  <p type="Email:"><input  type="email" autoComplete="email" placeholder="Let us know how to contact you back.."/></p>
+  <p type="Name:"><input required type="text" autoComplete="given-name"  placeholder="Write your name here.."/></p>
+  <p type="Email:"><input  required type="email" autoComplete="email" placeholder="Let us know how to contact you back.."/></p>
   <p type="Message:">
-  <textarea class="input" type="text" autoComplete="massage"  placeholder="What would you like to tell us or need help with.." /></p>
-  <button>Send Message</button>
+  <textarea class="input" required type="text" autoComplete="massage"  placeholder="What would you like to tell us or need help with.." /></p>
+  <button type="submit">Send Message</button>
   <div>
-    <a href="mailto:help@airmailer.net">help@airmailer.net</a> 
+    <a href="mailto:help@airmailer.net">help@airmailer.co.za</a> 
   </div>
 </form>
- 
- 
- 
  </div>
 
 </section>

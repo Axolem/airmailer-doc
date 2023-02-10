@@ -4,13 +4,13 @@ Send an email from your code without installing any packages.
 
 ## End-points
 
-Send email:
+Send email: POST
 ```
-POST https://api.airmailer.app/api/v1/email/send
+https://airmailer.cyclic.app/api/v2/email/send
 ```
-Check email result:
+Check email result: GET
 ```
-GET https://api.airmailer.app/api/v1/email/{app_id}
+https://airmailer.cyclic.app/api/v2/email/{app_id}
 //This will return the last sent email
 ```
 
@@ -19,7 +19,7 @@ GET https://api.airmailer.app/api/v1/email/{app_id}
 ```js
 async ()=>{
     await fetch(
-        "https://api.airmailer.app/api/v1/email/send",
+        "https://airmailer.cyclic.app/api/v2/email/send",
         {
             method: "POST",
             headers: { "Content-type": "application/json;charset=UTF-8" },
