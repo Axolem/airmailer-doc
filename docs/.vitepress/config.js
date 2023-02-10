@@ -59,7 +59,7 @@ export default {
     nav: [
       { text: "Docs", link: "/pages/docs/" },
       { text: "Github", link: "https://github.com/" },
-      { text: "Login", link: "https://airmailer.vercel.app/" },
+      { text: "Login", link: "https://app.airmailer.co.za" },
     ],
     socialLinks: [
       { icon: "youtube", link: "" },
