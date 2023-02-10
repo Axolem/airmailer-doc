@@ -10,7 +10,7 @@ btn.appendChild(btnText);
 //Create frame
 const div = document.createElement("div");
 div.setAttribute("id", "feeedback");
-div.setAttribute("class", "true");
+div.setAttribute("class", "false");
 
 const para = document.createElement("iframe");
 para.setAttribute("src", "https://www.surveymonkey.com/r/HHHG7J6");
