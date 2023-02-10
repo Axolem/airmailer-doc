@@ -4,10 +4,6 @@ export default {
   lang: "en-UK",
   lastUpdated: true,
   cleanUrls: "without-subfolders",
-  editLink: {
-    pattern: "https://github.com/Axolem/airmailer-doc/edit/main/docs/:path",
-    text: "Edit this page on GitHub",
-  },
   head: [
     [
       "link",
@@ -63,10 +59,9 @@ export default {
       { icon: "discord", link: "https://discord.gg/FYCFCT6Y" },
     ],
     editLink: {
-      pattern: 'https://github.com/Axolem/airmailer-doc/edit/main/docs/:path', //https://github.com/Axolem/airmailer-doc/tree/master/docs
-      text: 'Edit this page on GitHub'
+      pattern: "https://github.com/Axolem/airmailer-doc/blob/master/docs/:path",
+      text: "Edit this page on GitHub",
     },
-
     sidebar: {
       "/pages/": [
         {
@@ -93,7 +88,6 @@ export default {
               text: "Usage Example",
               link: "/pages/docs/sdk/usage/",
             },
-            
           ],
         },
         {
@@ -125,7 +119,7 @@ export default {
             {
               text: "Verify Email",
               link: "/pages/docs/user-guides/verify/",
-            }
+            },
           ],
         },
       ],
