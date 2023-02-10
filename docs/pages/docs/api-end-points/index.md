@@ -12,7 +12,7 @@ Send email:
 
 ::POST
 
-```
+```link
 https://airmailer.cyclic.app/v2/email/send
 ```
 
