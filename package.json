@@ -18,5 +18,5 @@
   "devDependencies": {
     "sass": "^1.57.1"
   },
-  "license":"MTI"
+  "license":"MIT "
 }
