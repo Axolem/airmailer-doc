@@ -10,7 +10,7 @@ Send an email from your code without installing any packages.
 
 Send email:
 
-::POST
+Method: POST
 
 ```link
 https://airmailer.cyclic.app/v2/email/send
@@ -82,3 +82,6 @@ Example of responses you may expect. (Not limited to these only check all respon
 }
 
 ```
+## Email Fields
+
+Refer to this [page](../user-guides/send/index.md) for all possible mail fields.

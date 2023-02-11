@@ -111,16 +111,38 @@ export default defineConfig({
           ],
         },
         {
-          text: "User Guides",
+          text: "Fields",
           collapsible: true,
           items: [
             {
               text: "Send Email",
-              link: "/pages/docs/user-guides/send/",
+              link: "/pages/docs/fields-guide/send/",
             },
             {
               text: "Verify Email",
-              link: "/pages/docs/user-guides/verify/",
+              link: "/pages/docs/fields-guide/verify/",
+            },
+          ],
+        },
+        {
+          text: "About US",
+          collapsible: true,
+          items: [
+            {
+              text: "Airmailer API",
+              link: "/pages/docs/about/api/",
+            },
+            {
+              text: "Contact",
+              link: "/pages/docs/about/contact/",
+            },
+            {
+              text: "Help",
+              link: "/pages/docs/about/Help/",
+            },
+            {
+              text: "Terms & Privacy",
+              link: "/pages/docs/about/legals/",
             },
           ],
         },
