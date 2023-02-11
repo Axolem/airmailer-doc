@@ -22,7 +22,7 @@ With this method the api is called once and the user can be permited to use your
 
 ## End-Point
 
-::POST
+Method: POST
 
 ```link
 https://airmailer.cyclic.app//v2/verify/email
@@ -32,7 +32,104 @@ https://airmailer.cyclic.app//v2/verify/email
 
 ### Request 1
 
-```js
+::: code-group
+
+```js [verify.js]
+async () => {
+  await fetch("https://airmailer.cyclic.app//v2/verify/email", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+      authorization: "APPID APIKey", //Space separated
+    },
+    body: {
+      email: "axolemaranjana4@gmail.com",
+      expire: 5000,
+      type: "code",
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      //Get the email id and store it in a variable to send with the code from user input
+    })
+    .catch((err) => {
+      //Handle the error here
+    });
+};
+```
+
+```json [Response]
+{
+  "massage": "Email with verification code has been sent to axolemaranjana4@gmail.com",
+  "data": {
+    "email": "axolemaranjana4@gmail.com",
+    "id": "ad2bb27938aa002eeabd499d"
+  }
+}
+```
+
+:::
+
+### Request 2
+
+Method: POST
+
+```link
+https://airmailer.cyclic.app/v2/verify/email/code
+```
+
+::: code-group
+
+```js [verifyCode.js]
+const emailIdFromPreviousResponse = data.id;
+
+async () => {
+  await fetch("https://airmailer.cyclic.app/v2/verify/email/code", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+      authorization: "APPID APIKey", //Space separated
+    },
+    body: {
+      emailId: emailIdFromPreviousResponse,
+      code: 6192,
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      //Get the email id and store it in a variable to send with the code from user input
+    })
+    .catch((err) => {
+      //Handle the error here
+    });
+};
+```
+
+```json [Response]
+{
+  "massage": "Email verified successfully!",
+  "data": {
+    "appsid": "ede9b4d199dde2822398bbe5",
+    "emailId": "0fb0ceade042bb7b7dfa37d9",
+    "email": "axolemaranjana4@gmail.com",
+    "code": "****",
+    "verified": true,
+    "exp": 2600,
+    "createdAt": "2023-02-11T04:49:01.000Z",
+    "updatedAt": "2023-02-11T04:49:01.000Z",
+    "timestamp": 1676098141650,
+    "link": "https://api.airmailer.co.za/"
+  }
+}
+```
+
+:::
+
+## Link example
+
+### Request
+
+```js{11}
 async () => {
   await fetch("https://airmailer.cyclic.app//v2/verify/email", {
     method: "POST",
@@ -66,57 +163,4 @@ async () => {
     "id": "ad2bb27938aa002eeabd499d"
   }
 }
-```
-
-### Request 2
-
-::POST
-
-```link
-https://airmailer.cyclic.app/v2/verify/email/code
-```
-
-```js
-const emailIdFromPreviousResponse = data.id;
-
-async () => {
-  await fetch("https://airmailer.cyclic.app/v2/verify/email/code", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json;charset=utf-8",
-      authorization: "APPID APIKey", //Space separated
-    },
-    body: {
-      emailId: emailIdFromPreviousResponse,
-      code: 6192,
-    },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      //Get the email id and store it in a variable to send with the code from user input
-    })
-    .catch((err) => {
-      //Handle the error here
-    });
-};
-```
-
-### Response
-
-```json
-
-```
-
-## LInk example
-
-### Request
-
-```js
-
-```
-
-### Response
-
-```json
-
 ```
