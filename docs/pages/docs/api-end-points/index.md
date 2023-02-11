@@ -52,7 +52,7 @@ Coming soon...
 
 ## Responses
 
-Example of responses you may expect. (Not limited to these only check all responses <a href="/pages/docs/user-guides/#responses">here</a>.)
+Example of responses you may expect. (Not limited to these only check all responses <a href="/pages/docs/fields-guide/#responses">here</a>.)
 
 ### Success
 
@@ -84,4 +84,4 @@ Example of responses you may expect. (Not limited to these only check all respon
 ```
 ## Email Fields
 
-Refer to this [page](../user-guides/send/index.md) for all possible mail fields.
+Refer to this [page](../fields-guide/send/index.md) for all possible mail fields.
