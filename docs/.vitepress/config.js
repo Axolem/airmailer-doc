@@ -1,19 +1,6 @@
-import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig } from "vite";
-const flexSearchIndexOptions = {
-  preset: "memory",
-  tokenize: "forward",
-  resolution: 5,
-};
-var options = {
-  ...flexSearchIndexOptions,
-  previewLength: 62,
-  buttonLabel: "Search",
-  placeholder: "Search docs",
-};
 
 export default defineConfig({
-  plugins: [SearchPlugin(options)],
   title: "Airmailer",
   description: "An awesome docs template built by me",
   lang: "en-UK",
@@ -142,6 +129,11 @@ export default defineConfig({
     footer: {
       message: "",
       copyright: `Copyright © ${new Date().getFullYear()} Airmailer`,
+    },
+    algolia: {
+      appId: "PO2B8R09PI",
+      apiKey: "ac8b3f64dbef671748b559a4b1d37d1c",
+      indexName: "airmailer-co",
     },
   },
 });
