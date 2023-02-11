@@ -138,7 +138,7 @@ export default defineConfig({
             },
             {
               text: "Help",
-              link: "/pages/docs/about/Help/",
+              link: "/pages/docs/about/help/",
             },
             {
               text: "Terms & Privacy",

@@ -6,7 +6,7 @@ This guide goes through the various methods used to install Airmailer SDK.
 
 You can install the Airmailer via <a href="https://www.npmjs.com/package/@airmailer/airmailer" >NPM</a>
 
-```js
+```bash
 npm install airmailer
 ```
 
@@ -14,6 +14,4 @@ npm install airmailer
 
 ## Sending a custom email
 
-
-prev: 'Get Started | Markdown'
 
