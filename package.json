@@ -14,7 +14,7 @@
   "dependencies": {
     "npm": "^9.4.2",
     "vitepress": "^1.0.0-alpha.45",
-    "vue": "^3.2.45"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "flexsearch": "^0.7.31",
