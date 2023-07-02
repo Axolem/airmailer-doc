@@ -22,7 +22,7 @@ export default defineConfig({
       "meta",
       {
         name: "robots",
-        content: "noindex, nofollow",
+        content: "index, follow",
       },
     ],
     ["meta", { name: "theme-color", content: "#3c8772" }],
